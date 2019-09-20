@@ -42,7 +42,6 @@ const loadImage = (img, observer = null) => {
   // load the image and set opacity to 1 when image has loaded
   img.src = img.dataset.src;
   img.onload = () => {
-    console.log('img loaded');
     img.style.opacity = 1;
     if (observer) {
       observer.unobserve(img);
