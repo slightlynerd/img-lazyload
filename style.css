@@ -12,7 +12,7 @@ html, body {
   height: 300px;
   object-fit: cover;
   background-color: #75757575;
-  margin: 20px;
+  margin: 100px;
 }
 .lazy-image img {
   display: block;
