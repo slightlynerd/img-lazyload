@@ -72,9 +72,9 @@ const observeImage = (image) => {
 };
 
 const startApp = () => {
+  const images = document.querySelectorAll('[data-src]');
   if ('loading' in HTMLImageElement.prototype) {
     // use native lazy loading by the browser
-    const images = document.querySelectorAll('[data-src]');
     images.forEach(img => {
       img.loading = 'lazy';
       loadImage(img);
@@ -88,7 +88,6 @@ const startApp = () => {
     script.src = 'intersection-observer.js';
     document.body.appendChild(script);
     script.onload = () => {
-      const images = document.querySelectorAll('[data-src]');
       images.forEach(observeImage);
     };
   }

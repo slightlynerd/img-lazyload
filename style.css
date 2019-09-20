@@ -23,6 +23,7 @@ html, body {
   line-height: 2;  
   text-align: center;
   position: relative;
+  transition: opacity 0.4s;
 }
 img:before { 
   content: " ";
